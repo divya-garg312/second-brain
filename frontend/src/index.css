@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'PlusJakartaSans';
+  src: url(../assets/fonts/PlusJakartaSans.woff2);
+}
+
+* {
+  font-family: 'PlusJakartaSans';
+}
+
+@theme {
+  --color-primary-btn-bg: #e0e7ff;
+  --color-primary-btn-text: #4237bf;
+  --color-secondary-btn-bg: #5046e4;
+  --color-secondary-btn-text: #fafeff;
+  --color-gray-mid: #353a48;
+  --color-input: #cfd7e4;
+  --color-input-div: #e1e5ef;
+  --color-body-bg: #f3f6fb;
+  --color-heading: #3269e3;
+  --color-subheading: #464c59;
+  --color-main-bg: #f9fbfc;
+  --color-sign-bg: #eef3fb;
+  --color-normal-color: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary-btn-bg: #3a3f66;
+    --color-primary-btn-text: #d8dafe;
+    --color-secondary-btn-bg: #6961e6;
+    --color-secondary-btn-text: #f2f6ff;
+    --color-gray-mid: #c7cbd4;
+    --color-input: #4a5160;
+    --color-input-div: #3c4251;
+    --color-body-bg: #1f242f;
+    --color-heading: #7ca5ff;
+    --color-subheading: #a5acc3;
+    --color-main-bg: #1e222b;
+    --color-sign-bg: #262c39;
+    --color-normal-color: #f2f6ff;
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
